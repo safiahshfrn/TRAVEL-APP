@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="meals.css" type="text/css" />
+    <title>meals</title>
+  </head>
+  <body>
+
+    <div class="header">
+        <nav id="navBar">
+          <a href="index.html">
+              <img src="images/logo.png" class="logo">
+          </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Popular Places</a></li>
+                <li><a href="meals.html">Food </a></li>
+                <li><a href="https://www.chinahighlights.com/tour/year.htm">Tour</a></li>
+            </ul>
+            <a href="#" class="register-btn">Go Now</a>
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
+        </nav>
+
+        <div class="content">
+          <h1>Cuisines</h1>
+      </div>
+
+
+
+      </div>
+  </div>
+  <div class="container">
+      <h2 class="sub-title"></h2>
+      <div class="exclusives">
+          <div>
+              <img src="images/f1.jpg">
+              <span>
+              </span>
+          </div>
+          <div>
+            <img src="images/f2.jpg">
+            <span>
+            </span>
+        </div>
+        <div>
+            <img src="images/f3.jpg">
+            <span>
+            </span>
+        </div>
+        <div>
+            <img src="images/f4.jpg">
+            <span>
+            </span>
+        </div>
+        <div>
+            <img src="images/f5.jpg">
+            <span>
+            </span>
+        </div>
+        <div>
+            <img src="images/f6.jpg">
+            <span>
+            </span>
+        </div>
+        <div>
+            <img src="images/f7.jpg">
+            <span>
+            </span>
+        </div>
+        <div>
+            <img src="images/f8.jpg">
+            <span>
+            </span>
+        </div>
+        <div>
+            <img src="images/f9.jpg">
+            <span>
+            </span>
+        </div>
+        <div>
+            <img src="images/f10.jpg">
+            <span>
+            </span>
+        </div>
+      </div>
+
+
+
+    <div class="search_weather">
+        <main>
+            <p>Select a city to find out their iconic Cuisines</p>
+            <select name="location" id="meal-input" required>
+                <option value="">Find your food</option>
+                <option>Wontons</option>
+                <option>Szechuan Beef</option>
+                <option>Sweet and Sour Pork</option>
+                <option>Shrimp Chow Fun</option>
+                <option>Kung Po Prawns</option>
+                <option>General Tso's Chicken</option>
+                <option>Egg Drop Soup</option>
+            </select>
+            <input id="meal-button" type="submit" value="Search" />
+            <ul id="meal-list"></ul>
+        </main>
+    </div> 
+
+
+  </div>
+<script src="meals.js"></script>
+<script>
+    var navBar = document.getElementById("navBar");
+    function togglebtn(){
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,253 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/food.jpg);
+  background-size: cover;
+  background-position: center;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+}
+.logo{
+  width: 140px;
+  cursor: pointer;
+}
+.nav-links li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: #fff;
+}
+.register-btn{
+  background: #fff;
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.content{
+  text-align: center;
+}
+.content h1{
+  text-align: center;
+  font-size: 120px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.content h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+.content a{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+      width: 100%;
+      height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+      width: auto;
+      height: 100%;
+  }
+}
+
+.container{
+  padding: 0 7%;
+}
+.header h1{
+  padding-top: 17%;
+}
+.search-bar{
+  background: #fff;
+  width: 70%;
+  margin: 30px auto;
+  padding: 6px 10px 6px 30px;
+  border-radius: 50px;
+}
+.search-bar form{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-bar form input{
+  display: block;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.search-bar form button{
+  background: #ff5361;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.search-bar form button img{
+  width: 15px;
+  margin-top: 7px;
+}
+.location-input{
+  flex: 1;
+}
+.search-bar form label{
+  font-weight: 600;
+}
+
+/* food pics */
+.sub-title{
+  /*margin: 50px 0 20px;*/
+  margin: 50px 0 20px;
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: #333;
+}
+.exclusives{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+.exclusives div img{
+  width: 100%;
+  border-radius: 10px;
+}
+.exclusives div{
+  position: relative;
+}
+.exclusives div span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+}
+
+
+/*meals api styling */
+.search_weather {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e13131;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e13131;
+}
+
+#meal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#meal-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#meal-list li:last-child {
+  border-bottom: none;
+}
+
+#meal-list li span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#meal-list li p {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+#meal-list li h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#meal-list li img {
+  height: 500px;
+  width: 850px;
+  margin-bottom: 10px;
+}
+
+#meal-list li video {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+#meal-list li img,
+#meal-list li video {
+  display: block;
+  max-width: 100%;
+}
